@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap.min.css">
+    <script src="bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <div class="nav-header">
+                <h1 class="header"><img src="assets\icons8-portfolio-48.png" alt="img not found" class="img-fluid"></h1>
+            </div>
+            <div class="nav-items">
+                <a href="#" class="url">Home</a>
+                <a href="#section2" class="url">About</a>
+                <a href="#section3" class="url">Skill</a>
+                <a href="#section4" class="url">Project</a>
+                <a href="#section5" class="url">Contact</a>
+                <div class="dropdown">
+                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button> -->
+                    <select name="dropdown-menu" id="dropdown-menu-id" onchange="redirectToLink(this)" class="dropdown-edit">
+                        <option value="#">Home</option>
+                        <option value="#section2">About</option>
+                        <option value="#section3">Skill</option>
+                        <option value="#section4">Project</option>
+                        <option value="#section5">Contact</option>
+                    </select>
+                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Home</a>
+                      <a class="dropdown-item" href="#">About</a>
+                      <a class="dropdown-item" href="#">Skill</a>
+                      <a class="dropdown-item" href="#">Project</a>
+                      <a class="dropdown-item" href="#">Contact</a>
+                    </div> -->
+                </div>
+                <!-- <div class="linkMenu">
+                    <img src="image\menuIcon.jpg" alt="Image Not Found!" class="menuLogo">
+                </div> -->
+            </div>
+        </div>
+        <div class="container m-100" id="content-home">
+            <div class="row pt-5">
+                <div class="col ps-5 mt-3">
+                    <div>
+                        <h1 class="display-4 text-black fw-bold">Hello there,</h1>
+                        <div class="intro mt-3">
+                            <h1 class="naming">My name is Aung Say.</h1>
+                            <span class="job fw-bold">I'm a Junior Spring developer</span>
+                        </div>
+                    </div>
+    
+                    <div class="mt-5">
+                        <h3>Welcome to</h3>
+                        <h2 class="display-5 fw-bold">My Portfolio</h2>
+                    </div>
+    
+                </div>
+                <div class="col d-flex justify-content-center align-item-enter">
+                    <img class="img-fluid rounded-circle" 
+                    src="image\profile.jpg" 
+                    alt="Image not found!">
+                </div>
+            </div>
+            <div class="container mt-3 bg-success p-3 rounded">
+                <p class="paragraph">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just a <span class="junior display-4 fw-normal">Junior</span> to cope with the backends strategies, especially
+                    subjected to <span class="java">Java/Spring</span>.The reason behind my application on Hackathon Event is that
+                     I can achieve a considerable amount of coding experiences, knowledges shared by team and guidances from seniors and mentors.
+                    Even though my portfolio design is not competent enough,I'm convinced that my knowledges and hardworks in 
+                    <span class="java">Java/Spring</span> can meet the required proficiency in a team. So, I would like to give it a try at my best.
+                </p>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card info">
+                            <h2 class="info-header m-3">Info</h2>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <input type="date" class="bg-warning p-1 rounded" value="2000-06-02">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-genderless"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="bg-success p-1 rounded">
+                                            <input type="radio" name="Gender" value="male" id="male" checked>
+                                            <label for="male" class="fw-bold text-black">Male</label>
+                                            <input type="radio" name="Gender" value="female" id="female">
+                                            <label for="female" class="fw-bold text-black">Female</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="bg-light p-1 rounded">
+                                            <select name="region" class="bg-light fw-bold text-black border">
+                                                <option value="Ygn" selected>Yangon</option>
+                                                <option value="Mdy">Mandalay</option>
+                                                <option value="POL">Pyin Oo Lwin</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card info">
+                            <h2 class="info-header m-3">Education</h2>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <h5>West Yangon Technological University</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <h5>BE-Mechanical(PostGrad)</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="icon-class">
+                                <div>
+                                    <i class="fa-solid fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <h5>Java Developer Class</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card info">
+                            <h2 class="info-header m-3">Hobby</h2>
+                            <div class="hobby">
+                                <div class="card hobby-content">
+                                    <i class="fa-solid fa-square-binary hobby-icon"></i>
+                                    <span class="fw-bold">Software</span>
+                                </div>
+                                <div class="card hobby-content">
+                                    <i class="fa-solid fa-code hobby-icon"></i>
+                                    <span class="fw-bold">Coding</span>
+                                </div>
+                                <div class="card hobby-content">
+                                    <i class="fa-solid fa-book-open-reader hobby-icon"></i>
+                                    <span class="fw-bold">Reading</span>
+                                </div>
+                            </div>
+                            <div class="hobby m-3">
+                                <div class="card hobby-content">
+                                    <i class="fa-solid fa-futbol hobby-icon"></i>
+                                    <span class="fw-bold">Soccer</span>
+                                </div>
+                                <div class="card hobby-content">
+                                    <i class="fa-solid fa-guitar hobby-icon"></i>
+                                    <span class="fw-bold">Guitar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card info">
+                            <h2 class="info-header m-3">Personality</h2>
+                            <div class="personality">
+                                <div class="card personality-content">
+                                    <h5 class="mt-3">Enthusiastic In</h5>
+                                    <ul>
+                                        <li class="fw-bold">Learning new Tech.</li>
+                                        <li class="fw-bold">Problem-Solving</li>
+                                        <li class="fw-bold">Testing</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="card mb-3 personality-content rounded">
+                                        <h5>Interpersonal</h5>
+                                        <ul>
+                                            <li class="fw-bold">Communication</li>
+                                            <li class="fw-bold">Team</li>
+                                            <li class="fw-bold">Adaptability</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 personality-content rounded">
+                                        <ul>
+                                            <li class="fw-bold">Well-behaved</li>
+                                            <li class="fw-bold">Accountable</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5" id="section3">
+            <div class="heading">
+                What I've learnt
+            </div>
+            <div class="skills-parent card p-3">
+                <div class="sectbor">
+                    <div class="card skills">
+                        <div class="card skills-content m-3">
+                            <img src="image\html.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\css.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\bootstrap.png" alt="htmlimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="sectbor">
+                    <div class="card skills">
+                        <div class="card skills-content m-3">
+                            <img src="image\java.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\springBoot.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\mysql.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\springSecurity.png" alt="htmlimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-spec">
+                    <div class="card skills">
+                        <div class="card skills-content m-3">
+                            <img src="image\springRest.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\springdata.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\springMVC.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\jwt.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\openId.png" alt="htmlimg">
+                        </div>
+                        <div class="card skills-content m-3">
+                            <img src="image\thymeleaf.png" alt="htmlimg">
+                        </div>
+                    </div>
+                    <div class="skills-cap">
+                        <div>
+                            <span class="caption">Spring Rest</span>
+                        </div>
+                        <div>
+                            <span class="caption">Spring Data</span>
+                        </div>
+                        <div>
+                            <span class="caption">Spring MVC</span>
+                        </div>
+                        <div>
+                            <span class="caption">JWT Token</span>
+                        </div>
+                        <div>
+                            <span class="caption">Oauth2/OpenId</span>
+                        </div>
+                        <div>
+                            <span class="caption">Thymeleaf</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5" id="section4">
+            <div class="text-center fw-normal">
+                <span>Browse My Recent</span>
+                <h3 class="fw-bold">Projects</h3>
+            </div>
+            <div class="card project mt-4">
+                <div class="card project-content mt-5">
+                    <div class="card p-3 ms-3 me-3 content-spec">
+                        <span class="fw-bold">EmployeeCRUD</span>
+                        <div>
+                            <ul>
+                                <li>Spring boot</li>
+                                <li>Thymeleaf</li>
+                                <li>Spring JPA</li>
+                                <li>Mysql</li>
+                            </ul>
+                        </div>
+                        <div class="btn btn-success btn-sm rounded">
+                            <a href="https://github.com/beyond-Mushi/employee-crud.git" class="linkEdit">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card project-content mt-5">
+                    <div class="card p-3 ms-3 me-3 content-spec">
+                        <span class="fw-bold">Movie-Api(InProgress)</span>
+                        <div>
+                            <ul>
+                                <li>Spring Rest</li>
+                                <li>Spring Security</li>
+                                <li>File Handling</li>
+                                <li>Pagination</li>
+                                <li>JWT</li>
+                                <li>Mysql</li>
+                            </ul>
+                        </div>
+                        <div class="btn btn-warning btn-sm rounded">
+                            <a href="https://github.com/beyond-Mushi/movie-api-testing.git" class="linkEdit">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card project-content mt-5">
+                    <div class="card p-3 ms-3 me-3 content-spec">
+                        <span class="fw-bold">Oauth-Server-Impl</span>
+                        <div>
+                            <ul>
+                                <li>Spring Security</li>
+                                <li>Jwt Claims</li>
+                                <li>Authentication</li>
+                            </ul>
+                        </div>
+                        <div class="btn btn-primary btn-sm rounded">
+                            <a href="https://github.com/beyond-Mushi/authorization-server-implementation-demo.git" class="linkEdit">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5" id="section5">
+            <div class="text-center fw-normal">
+                <span>Get In Touch</span>
+                <h3 class="fw-bold">Contact me</h3>
+            </div>
+            <div class="card contact-spec">
+                <div class="card contact">
+                    <div class="contact-content">
+                        <div class="size-edit">
+                            <img src="assets\icons8-email-100.png" alt="emailImg" class="img-fluid">
+                        </div>
+                        <div class="caption-edit">
+                            <span>aungsay2700@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="size-edit">
+                            <img src="assets\icons8-phone-96.png" alt="phoneImg" class="img-fluid">
+                        </div>
+                        <div class="caption-edit">
+                            <span>+95-9782266316</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-content2 mt-2">
+                    <div class="logo-edit">
+                        <div class="size-edit m-1">
+                            <a href="https://github.com/beyond-Mushi">
+                                <img src="assets\icons8-github-50.png" alt="githubImg" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo-edit">
+                        <div class="size-edit m-1">
+                            <a href="https://www.instagram.com/aung.say.2700?igsh=dGw2dWhtdzE5ZXI0">
+                                <img src="assets\icons8-instagram-96.png" alt="instaImg" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo-edit">
+                        <div class="size-edit m-1">
+                            <a href="https://www.facebook.com/aung.say.5203?mibextid=ZbWKwL">
+                                <img src="assets\icons8-facebook.gif" alt="fbImg" class="img-fluid rounded-circle">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo-edit">
+                        <div class="size-edit m-1">
+                            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B3mawUXC0QSyXtOcxZHRprg%3D%3D">
+                                <img src="assets\icons8-linkedin-96.png" alt="linkedInImg" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToLink(select) {
+          const url = select.value;
+          if (url) {
+            window.location.href = url; // Redirect to the selected URL
+          }
+        }
+      </script>
+</body>
+</html>
